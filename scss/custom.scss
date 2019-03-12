@@ -2,3 +2,54 @@
 // Option A: Include all of Bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+// base
+
+main {
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// ===============
+//     HEADER
+// ===============
+
+// nav
+
+
+// jumbotron
+.jumbotron {
+  padding: $jumbotron-padding ($jumbotron-padding / 2);
+  margin-bottom: $jumbotron-padding;
+  // color: $jumbotron-color;
+  // background-color: transparent;
+  @include border-radius($border-radius-lg);
+
+  @include media-breakpoint-up(sm) {
+    padding: ($jumbotron-padding * 2) $jumbotron-padding;
+  }
+  // mods
+  background-image: url("/images/goVegan.jpeg");
+  background-color: transparent;
+  height: 720px;
+  color: green;
+  margin: 0 auto;
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  @include border-radius(0);
+}
+
+
+// ===============
+//     main
+// ===============
+
+#tacos {
+  margin: 50px auto;
+}
